@@ -1,0 +1,15 @@
+{
+  "short_name": "Navreen Kaur",
+  "name": "Welcome to my blog",
+  "icons": [
+    {
+      "src": "logo_nk.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
