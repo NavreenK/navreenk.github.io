@@ -38,26 +38,39 @@
 }
 
 :root {
-  --background: #FBFBFB;
-  --text-main: #6B6F72;
-  --text-link: #1F2122;
-  --link-gradient-left: rgb(255, 178, 62, 0.8); 
-  --link-gradient-right: rgb(254, 73, 162, 0.8);
-  --link-gradient-left-hover: rgb(255 178 62);
-  --link-gradient-right-hover: rgb(254 73 162);
+  --link-hover: rgb(219, 39, 119, 0.9);
 }
 
 .projectLink {
-  color: var(--text-link);
-  font-weight: 700;
-  background-image: linear-gradient(100deg, var(--link-gradient-left) 0%, var(--link-gradient-right) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.6em;
-  background-position: 0 90%;
-  transition: background-size 0.4s ease-in-out, background-image 0.4s ease-in-out;;
+    background:
+    linear-gradient(
+      to bottom,
+      var(--link-hover) 0%,
+      var(--link-hover) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size 0.4s ease-in-out, background-image 0.4s ease-in-out;
+}
+
+.resumeLink {
+    background:
+    linear-gradient(
+      to bottom,
+      var(--link-hover) 0%,
+      var(--link-hover) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size 0.4s ease-in-out, background-image 0.4s ease-in-out;
 }
 
 .projectLink:hover {
-  background-image: linear-gradient(120deg, var(--link-gradient-left-hover) 0%, var(--link-gradient-right-hover) 100%);
-  background-size: 115% 88%;
+  background-size: 4px 65%;
 }

@@ -9,7 +9,7 @@ function Projects() {
             <div id="projects" className="lg:col-span-2 lg:col-start-2 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
                 <div className="lg:pr-4">
                     <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Projects</h2>
+                        <h2 className="mt-10 text-2xl font-bold tracking-tight text-gray-900">Projects</h2>
                         <ul role="list" class="">
                             {projects.map((project) => (
                                 <li class="flex justify-between py-5 hover:shadow-sm rounded-md">
