@@ -13,7 +13,7 @@ function Projects() {
                         <h2 className="mt-10 text-2xl font-bold tracking-tight text-gray-900">Projects</h2>
                         <ul role="list" className="">
                             {projects.map((project) => (
-                                <li className="flex justify-between py-5 hover:shadow-sm rounded-md">
+                                <li className="flex justify-between py-5 rounded-md">
                                     <div className="flex gap-x-4 p-2">
                                         <div className="min-w-0 flex-auto">
                                             <div className="group flex transition ease-in-out delay-150 hover:scale-100 duration-300">
