@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <div className="relative isolate overflow-hidden bg-stone-100 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+        <div className="m-auto grid max-w-2xl grid-cols-1 gap-x-8 max-w-screen-lg lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
             <div className="lg:pr-4 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-12">
               <div className="lg:max-w-lg">
