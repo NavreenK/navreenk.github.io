@@ -1,35 +1,38 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Projects from './components/projects';
+import AboutMe from './components/aboutme';
 
 function App() {
   return (
     <div>
-      <div className="relative isolate overflow-hidden bg-stone-100 px-6 py-24 sm:py-32 lg:py-16 lg:overflow-visible lg:px-0">
-        <div className="m-auto grid max-w-2xl grid-cols-1 gap-x-8 max-w-screen-lg lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <div className="lg:pr-4 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-12">
-              <div className="lg:max-w-lg">
-                <p className="text-base font-semibold leading-7 text-pink-600">Hello! 👋</p>
-                <a href="https://www.linkedin.com/in/navreen-kaur-8b3098a3/" target="_blank"><h1 className="projectLink w-fit mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Navreen Kaur</h1></a>
-                <p className="mt-6 text-xl leading-8 text-gray-700">
+      <div className="relative isolate overflow-hidden bg-orange-50/[.50] px-6 py-24 sm:py-32 lg:py-16 lg:overflow-visible lg:px-0">
+        <div className="m-auto max-w-2xl max-w-screen-lg lg:items-start lg:gap-y-10">
+          <div className="sm:p-12 p-4 lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            <div className="lg:pr-4 lg:mx-auto lg:grid justify-self-center lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-12">
+              <div className="lg:max-w-3xl">
+                <p className="centerText text-base font-semibold leading-7 text-rose-500">Hello! 👋</p>
+                <h1 className="headerFont projectLink w-fit mt-2 text-4xl font-bold text-zinc-800 sm:text-5xl">navreen kaur</h1>
+                <p className="centerText textFont mt-6 text-xl leading-8 text-zinc-800 tracking-tight">
                   I'm Navreen Kaur, a design-minded front-end developer passionate about developing pixel-perfect user interfaces and experiences for all 👩🏽💻
                 </p>
               </div>
-              <div className="group flex h-6 ml-1 mt-8">
-                <a className="font-medium underline decoration-stone-100 decoration-2 hover:decoration-pink-600" href="https://navreenk.github.io/resume.pdf" type="application/pdf" target="_blank">View Resume</a>
-                <ArrowSmallRightIcon style={{marginTop: "0.45rem"}} className="translate-x-1 -translate-y-1 group-hover:translate-x-2 group-hover:delay-75 h-5 w-5 flex-none text-pink-600" aria-hidden="true" />
-              </div>
-              <div className="h-6 ml-1 mt-8">
-                <a href="https://github.com/NavreenK" target="_blank"><FontAwesomeIcon className="h-6 mr-4 hover:text-pink-600" icon={faGithub} /></a>
-                <a href="https://www.linkedin.com/in/navreen-kaur-8b3098a3/" target="_blank"><FontAwesomeIcon className="h-6 mr-4 hover:text-pink-600" icon={faLinkedin} /></a>
+              <div className="group justify-center grid xs:flex mt-8">
+                <div className="self-center">
+                <a className="hidden font-medium text-zinc-800 rounded-full bg-amber-400 hover:bg-amber-500 px-7 py-2.5" href="https://navreenk.github.io/resume.pdf" type="application/pdf" target="_blank">view resume</a>
+                <a className="font-medium text-zinc-800 rounded-full bg-amber-400 hover:bg-amber-500 px-7 py-2.5 ml-2 xs:ml-4 smallScreenButton" href="https://navreenkaur.notion.site/navreenkaur/Navreen-s-Work-edbb3866c86f44a392b8bb4fb15fbc42" target="_blank">project archive</a>
+                </div>
+                <div className="xs:mt-0 mt-4 justify-self-center">
+                <a href="https://github.com/NavreenK" target="_blank"><FontAwesomeIcon className="h-6 p-2.5 mr-4 xs:ml-6 rounded-full bg-stone-200 text-zinc-800 hover:text-rose-500" icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/navreen-kaur-8b3098a3/" target="_blank"><FontAwesomeIcon className="h-6 p-2.5 mr-4 rounded-full bg-stone-200 text-zinc-800 hover:text-rose-500" icon={faLinkedinIn} /></a>
+                </div>
               </div>
             </div>
           </div>
-          <Projects></Projects>
         </div>
+        <AboutMe></AboutMe>
       </div>
     </div>
   );

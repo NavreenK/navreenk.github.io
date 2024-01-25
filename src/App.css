@@ -42,18 +42,17 @@
 }
 
 .projectLink {
-    background:
-    linear-gradient(
-      to bottom,
-      var(--link-hover) 0%,
-      var(--link-hover) 100%
-    );
+    width: -webkit-fill-available;
+    text-align: -webkit-center;
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 4px 4px;
-    color: #000;
     text-decoration: none;
     transition: background-size 0.4s ease-in-out, background-image 0.4s ease-in-out;
+}
+
+.centerText {
+  text-align: -webkit-center;
 }
 
 .resumeLink {
@@ -66,11 +65,24 @@
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 4px 4px;
-    color: #000;
     text-decoration: none;
     transition: background-size 0.4s ease-in-out, background-image 0.4s ease-in-out;
 }
 
 .projectLink:hover {
   background-size: 4px 65%;
+}
+
+.headerFont {
+  font-family: 'Zilla Slab', serif;
+}
+.textFont {
+  font-family: 'Lexend', serif;
+}
+@media (max-width: 422px) { 
+  .smallScreenButton {
+    display: grid;
+    margin-left: 0px;
+    margin-top: 19px;
+  }
 }
