@@ -74,10 +74,11 @@
 }
 
 .headerFont {
-  font-family: 'Zilla Slab', serif;
+  font-family: "Zilla Slab", serif;
+  font-style: normal;
 }
 .textFont {
-  font-family: 'Lexend', serif;
+  font-family: "Lexend", serif;
 }
 @media (max-width: 422px) { 
   .smallScreenButton {

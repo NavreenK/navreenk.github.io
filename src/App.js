@@ -1,8 +1,7 @@
 import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import Projects from './components/projects';
 import AboutMe from './components/aboutme';
 
 function App() {
@@ -24,9 +23,19 @@ function App() {
                 <a className="hidden font-medium text-zinc-800 rounded-full bg-amber-400 hover:bg-amber-500 px-7 py-2.5" href="https://navreenk.github.io/resume.pdf" type="application/pdf" target="_blank">view resume</a>
                 <a className="font-medium text-zinc-800 rounded-full bg-amber-400 hover:bg-amber-500 px-7 py-2.5 ml-2 xs:ml-4 smallScreenButton" href="https://navreenkaur.notion.site/navreenkaur/Navreen-s-Work-edbb3866c86f44a392b8bb4fb15fbc42" target="_blank">project archive</a>
                 </div>
-                <div className="xs:mt-0 mt-4 justify-self-center">
-                <a href="https://github.com/NavreenK" target="_blank"><FontAwesomeIcon className="h-6 p-2.5 mr-4 xs:ml-6 rounded-full bg-stone-200 text-zinc-800 hover:text-rose-500" icon={faGithub} /></a>
-                <a href="https://www.linkedin.com/in/navreen-kaur-8b3098a3/" target="_blank"><FontAwesomeIcon className="h-6 p-2.5 mr-4 rounded-full bg-stone-200 text-zinc-800 hover:text-rose-500" icon={faLinkedinIn} /></a>
+                <div className="xs:mt-0 mt-8">
+                <a href="https://github.com/NavreenK" target="_blank">
+                <span className="fa-layers fa-fw ml-6">
+                  <FontAwesomeIcon icon={faCircle} className="text-stone-200" size="3x"/>
+                  <FontAwesomeIcon className="h-6 p-[.80em] mr-4 xs:ml-6 rounded-full text-zinc-800 hover:text-rose-500" icon={faGithub} />
+                  </span>
+                </a>
+                <a href="https://www.linkedin.com/in/navreen-kaur-8b3098a3/" target="_blank">
+                <span className="fa-layers fa-fw ml-12">
+                  <FontAwesomeIcon icon={faCircle} className="text-stone-200" size="3x"/>
+                  <FontAwesomeIcon className="h-6 p-3.5 mr-4 text-zinc-800 hover:text-rose-500" icon={faLinkedinIn} />
+                  </span>
+                </a>
                 </div>
               </div>
             </div>
