@@ -15,7 +15,7 @@ function App() {
                 <p className="centerText text-base font-semibold leading-7 text-rose-500">Hello! 👋</p>
                 <h1 className="headerFont projectLink w-fit mt-2 text-4xl font-bold text-zinc-800 sm:text-5xl">navreen kaur</h1>
                 <p className="centerText textFont mt-6 text-xl leading-8 text-zinc-800 tracking-tight">
-                  I'm Navreen Kaur, a design-minded front-end developer passionate about developing pixel-perfect user interfaces and experiences for all 👩🏽💻
+                  I'm Navreen Kaur, a design-minded software engineer passionate about developing pixel-perfect user interfaces and experiences for all 👩🏽💻
                 </p>
               </div>
               <div className="group justify-center grid xs:flex mt-8">
