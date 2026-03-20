@@ -192,7 +192,7 @@ const Portfolio = () => {
           <div className="grid md:grid-cols-12 gap-12 md:gap-20">
             <div className="reveal reveal-delay-1 md:col-span-7 space-y-6 text-[var(--text-secondary)] text-[16px] leading-[1.8]">
               <p>
-                I'm a mission-driven Software Engineer with 6+ years of experience building products for startups and enterprise clients.
+                I'm a mission-driven Software Engineer with 7+ years of experience building products for startups and enterprise clients.
                 I am passionate about creating intuitive user experiences that clearly communicate complex ideas and leave a lasting impact on users.
                 I love combining my knowledge in engineering with my interest for design.
               </p>
